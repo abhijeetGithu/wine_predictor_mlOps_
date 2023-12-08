@@ -1,3 +1,5 @@
 dvc
 dvc[gdive]
 scikit-learn
+pytest
+tox

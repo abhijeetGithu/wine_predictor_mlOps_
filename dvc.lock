@@ -40,3 +40,19 @@ stages:
       hash: md5
       md5: 81dce00e053ba5ebabeacf8e7dca537a
       size: 74913
+  train_model:
+    cmd: python src/train_and_evaluate.py --config=params.yaml
+    deps:
+    - path: data/processed/train_winequality.csv
+      hash: md5
+      md5: 81dce00e053ba5ebabeacf8e7dca537a
+      size: 74913
+    - path: src/train_and_evaluate.py
+      hash: md5
+      md5: bdb8ef3f9735d046d175afaa5fb94f49
+      size: 2654
+    outs:
+    - path: saved_models/model.joblib
+      hash: md5
+      md5: 7700aee0b556bcacb6884aa3e8a34d90
+      size: 1279

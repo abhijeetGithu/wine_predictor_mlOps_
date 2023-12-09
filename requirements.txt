@@ -1,8 +1,13 @@
+-e .
+
+# third party packages
 dvc
-dvc[gdive]
-scikit-learn
+dvc[gdrive]
+sklearn
+pandas
 pytest
 tox
 flake8
 flask
 gunicorn
+PyYAML
